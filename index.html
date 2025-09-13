@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Code Learning Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>AI-Powered Code Learning and Debugging Assistant</h1>
+  </header>
+  <main>
+    <section id="code-input">
+      <h2>Enter Your Code</h2>
+      <textarea id="code" placeholder="Paste or type your JavaScript code here..."></textarea>
+      <div class="buttons">
+        <button id="analyze-btn">Analyze Code</button>
+        <button id="debug-btn">Debug Code</button>
+      </div>
+    </section>
+    <section id="exercise-gen">
+      <h2>Generate Programming Exercise</h2>
+      <select id="level">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+      <button id="generate-btn">Generate Exercise</button>
+    </section>
+    <section id="results">
+      <h2>Results</h2>
+      <div id="analysis-result"></div>
+      <div id="debug-result"></div>
+      <div id="exercise-result"></div>
+    </section>
+    <section id="tutorials">
+      <h2>Interactive Tutorials</h2>
+      <details>
+        <summary>Variables and Data Types</summary>
+        <p>Step 1: Declare a variable using 'var', 'let', or 'const'.</p>
+        <p>Step 2: Assign a value: var name = 'John';</p>
+        <p>Step 3: Data types include string, number, boolean, etc.</p>
+      </details>
+      <details>
+        <summary>Functions</summary>
+        <p>Step 1: Define a function: function myFunc() { }</p>
+        <p>Step 2: Add parameters: function sum(a, b) { return a + b; }</p>
+        <p>Step 3: Call the function: sum(2, 3);</p>
+      </details>
+      <details>
+        <summary>Loops</summary>
+        <p>Step 1: For loop: for (var i = 0; i < 5; i++) { console.log(i); }</p>
+        <p>Step 2: While loop: while (condition) { }</p>
+        <p>Step 3: Use loops to repeat code.</p>
+      </details>
+      <details>
+        <summary>Conditionals</summary>
+        <p>Step 1: If statement: if (condition) { }</p>
+        <p>Step 2: Else: if (true) { } else { }</p>
+        <p>Step 3: Use for decision making.</p>
+      </details>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
